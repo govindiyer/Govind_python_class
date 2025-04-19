@@ -18,4 +18,28 @@ Problem: Grocery Shopping List Management
 
     5. View Important Items:
         Finally, print out the current list of grocery items to view the most important items.
+        
 '''
+
+
+#1
+mylist=["milk","eggs","butter","bread","cheese"]
+#2
+mylist.append("orangejuice")
+mylist.extend(["apple","banana"])
+
+#3
+mylist.remove("cheese")
+mylist.remove("orangejuice")
+
+#4
+mylist[0]=("milk('cheap brand')")
+mylist[3]=("bread('cheap brand')")
+
+#5
+print(mylist)
+
+
+
+
+
