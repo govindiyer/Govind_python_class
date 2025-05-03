@@ -51,4 +51,22 @@ print(mylist[0])
 
 
 #4
+"""
+Kiran, a trader in the Silk Road Bazaar, maintains a ledger of goods: "Cloth" with a quantity of 100 and "Spice" with 50. A new shipment updates the ledger with "Spice" at 75 and adds "Jewelry" 
+with 20. Kiran needs to combine the old and new ledgers (with new quantities taking precedence) and check the quantity of "Spice" for his sales log.
+
+Task:
+Start with a ledger of "Cloth": 100, "Spice": 50, combine it with a new ledger of "Spice": 75, "Jewelry": 20, get the quantity of "Spice", and print it.
+"""
+mydict={
+    "Cloth":100,
+    "Spice":50,
+}
+mydict.update({"Spice": 75})
+mydict.update({"Jewelry":20})
+mydict.get("Spice")
+print(mydict)
+
+#5
+
 
