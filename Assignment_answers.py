@@ -69,4 +69,19 @@ print(mydict)
 
 #5
 
+"""
+
+Zara, a wedding planner, has two guest registries: one with "Sophia", "James", "Lily" and another with "James", "Ethan", "Mia". She needs to create a single, alphabetically organized collection
+of all unique guests to finalize the seating chart.
+Take two collections "Sophia", "James", "Lily" and "James", "Ethan", "Mia", combine them into a single collection of unique items, sort it alphabetically, and print the result.
+"""
+List1=["Sophia","James","Lily"]
+List2=["Ethan","James","Mia"]
+List3=(List1+List2)
+List3.sort()
+print(List3)
+
+
+
+
 
