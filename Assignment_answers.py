@@ -80,6 +80,21 @@ List2=["Ethan","James","Mia"]
 List3=(List1+List2)
 List3.sort()
 print(List3)
+#6
+
+"""
+Omar, a librarian at the Eternal Library, keeps a catalog of books: "Novel" published in 1920 and "Poetry" in 1850. For a digital archive, he needs to convert the catalog into a fixed 
+sequence of entries and retrieve the first entry for a library newsletter.
+
+Task:
+Start with a catalog of "Novel": 1920, "Poetry": 1850, convert it into a fixed sequence of entries, extract the first entry, and print it.
+"""
+dicad={
+    "Novel":1920,
+    "Poetry":1850
+}
+print(set(dicad))
+
 
 
 
