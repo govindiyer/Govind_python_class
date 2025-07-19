@@ -142,6 +142,14 @@ print(freq)
 """
 
 
+# fromkeys -- 
+# nums = [1,2,3,4,5,6,7,8,9]
+# myDictionary ={}
+# # myDictionary["Key1"] = 100
+# myDictionary = dict.fromkeys(nums,"Arvinder")
+# print(myDictionary)
+
+
 
 
 
