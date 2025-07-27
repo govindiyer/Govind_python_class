@@ -1,22 +1,7 @@
 # ------------------------------------------
-# 🔁 CONDITIONALS & LOOPS
-# ------------------------------------------
+# 🔁 CONDITIONALS & LOOPS-->=
 
-# 1. Write a program that checks if a number is positive, negative, or zero.
-# 2. Create a program that determines if a year is a leap year or not.
-# 3. Develop a simple calculator that takes two numbers and an operator (+, -, *, /) and performs the operation.
-# 4. Write a program that grades a student based on their score (e.g., A for 90-100, B for 80-89, etc.).
-# 5. Create a program that checks if a string is a palindrome.
-# 6. Write a program that prints the first 10 natural numbers using a for loop.
-# 7. Create a program that calculates the factorial of a number using a while loop.
-# 8. Develop a program that prints the multiplication table of a given number up to 10.
-# 9. Write a program that finds the sum of all even numbers between 1 and 100.
-# 10. Create a program that reverses a given string using a loop.
-# 11. Write a program to list all numbers between 1500 and 2700 (inclusive) that are divisible by 7 and are also multiples of 5.
-# 12. Write a program to convert temperatures between Celsius and Fahrenheit.
-# 13. Write a program to check whether a given integer is prime or not.
-# 14. Write a program to count the number of vowels and consonants in a given string.
-# 15. Write a program to generate the first N numbers of the Fibonacci sequence.
+
 
 # ------------------------------------------
 # 📋 LISTS
@@ -77,3 +62,68 @@
 # 48. Write a program to convert a list of dictionaries into one dictionary by merging them.
 # 49. Write a program to flatten a list of tuples into a single list.
 # 50. Write a program that accepts a list of strings and returns a dictionary with string lengths as keys and lists of strings as values.
+
+
+#Loops&Conditionals--
+"""
+A1-
+x=int(input("Enter a number"))
+if x>0:
+    print("Positive")
+elif x<0:
+    print("Neagative")
+else:
+    print("Zero")
+
+A2-
+x=int(input("Enter a number: "))
+if x==365:
+    print("Non Leap year")
+elif x==366:
+    print("Leap year")
+else:
+    print("Invalid number,Enter another one")
+
+A3-
+num1=int(input("Enter a number: "))
+num2=int(input("Enter another number: "))
+oper=input("Enter a operator")
+if oper=="+":
+    print("The sum of",num1,"And",num2,"Is",num1+num2)
+elif oper=="-":
+    print("The difference between ",num1,"And",num2,"Is",num1-num2)
+elif oper=="*":
+    print("The product of ",num1,"And",num2,"Is",num1*num2)
+elif oper=="/":
+    print("The quotient of ",num1,"And",num2,"Is",num1/num2)
+elif oper=="%":
+    print("The remainder of ",num1,"And",num2,"Is",num1%num2)
+else:
+    print("Invalid Number,Enter another operator")
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+# 2. Create a program that determines if a year is a leap year or not.
+# 3. Develop a simple calculator that takes two numbers and an operator (+, -, *, /) and performs the operation.
+# 4. Write a program that grades a student based on their score (e.g., A for 90-100, B for 80-89, etc.).
+# 5. Create a program that checks if a string is a palindrome.
+# 6. Write a program that prints the first 10 natural numbers using a for loop.
+# 7. Create a program that calculates the factorial of a number using a while loop.
+# 8. Develop a program that prints the multiplication table of a given number up to 10.
+# 9. Write a program that finds the sum of all even numbers between 1 and 100.
+# 10. Create a program that reverses a given string using a loop.
+# 11. Write a program to list all numbers between 1500 and 2700 (inclusive) that are divisible by 7 and are also multiples of 5.
+# 12. Write a program to convert temperatures between Celsius and Fahrenheit.
+# 13. Write a program to check whether a given integer is prime or not.
+# 14. Write a program to count the number of vowels and consonants in a given string.
+# 15. Write a program to generate the first N numbers of the Fibonacci sequence.

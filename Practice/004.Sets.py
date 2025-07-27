@@ -74,7 +74,7 @@ print(CountDuplicates(myList))
 """
 
 # How to count the unique values
-"""
+
 myList = [1,2,3,4,5,4,3,6]
 def UniquesValues(myList):
     seen = set()
@@ -89,7 +89,7 @@ def UniquesValues(myList):
 
     return count 
 print(UniquesValues(myList))
-"""
+
 
 
 # Return only unique even numbers 
