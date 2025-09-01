@@ -69,6 +69,7 @@ add(-300, -400)
 sum = 0
 
 def AddLocal(a, b):
+    # sum = 0   # Local variable 
     sum = a + b
     print("Sum inside function:", sum)
 
@@ -87,6 +88,7 @@ y = Number(x)
 print("Returned value:", y)
 
 def SumOfNumbers(a, b, c):
+    result = 0
     result = a + b + c
     return result
     # Code after return is not executed:

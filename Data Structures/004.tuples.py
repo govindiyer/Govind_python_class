@@ -70,3 +70,18 @@ tuple5 = tuple(list1)
 print(tuple5)
 
 print(tuple5+ tuple2)
+
+
+
+# Unpacking the tuple
+print("------------- Unpacking Tuples ----------------- ")
+cars = ("BMW","AUDI","Fortuner","Range Rover","Nano")
+
+# a,b,c ,d ,e = cars 
+# print(e)
+
+# First and Last Value 
+# a , *b ,e = cars 
+# print(a,b,e)
+
+
