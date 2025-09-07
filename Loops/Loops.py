@@ -119,3 +119,11 @@ even_index_product = 1
 for i in range(0, len(nums), 2):
     even_index_product *= nums[i]
 print("Product at even indices:", even_index_product)  # Output: Product at even indices: 48
+
+
+
+
+
+
+
+

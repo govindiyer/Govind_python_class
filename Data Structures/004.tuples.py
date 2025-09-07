@@ -1,6 +1,6 @@
 # Lists , Dictionary , Sets 
 
-# tuples - immutable -- We can't add or remove elements froma tuple 
+# tuples - immutable -- We can't add or remove elements from a tuple 
 
 # Ordered Collection , index 
 
@@ -70,3 +70,5 @@ tuple5 = tuple(list1)
 print(tuple5)
 
 print(tuple5+ tuple2)
+L = sorted(tuple4)
+print(L)
