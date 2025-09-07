@@ -100,6 +100,12 @@ elif oper=="%":
     print("The remainder of ",num1,"And",num2,"Is",num1%num2)
 else:
     print("Invalid Number,Enter another operator")
+
+A4-
+n=int(input("Enter a number:  ))
+if n>90 and n<=100:
+   print("A")
+elif 
 """
 
 

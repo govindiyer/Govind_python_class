@@ -1,0 +1,9 @@
+print("Answers")
+#1
+"""
+l=["Vase","Statue","Coin"]
+l.append("Tablet")
+l.insert(0,"Mask")
+l.sort()
+print(l)
+"""

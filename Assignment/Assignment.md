@@ -60,4 +60,3 @@ Omar, a librarian at the Eternal Library, keeps a catalog of books: "Novel" publ
 **Task**:  
 Start with a catalog of "Novel": 1920, "Poetry": 1850, convert it into a fixed sequence of entries, extract the first entry, and print it.
 
----
