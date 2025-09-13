@@ -4,16 +4,16 @@ Date: 07-09-2025
 Section A : True / False
 
 1. Python is case sensitive when dealing with identifiers. 
-A-True
+A-True 
 2. Can mathematical operations be directly performed on a string in Python without conversion?
 A-False
 3. The expression 2**2**3 is evaluates as: (2**2)**3.
-A-True
+A-True  ❌
 4. What will be the output of the following Python code snippet?
 """
 print(bool('False'))
 """
-A-Output--False
+A-Output--False  ❌
 """
 """
 5. The expression int(x) implies that the value of variable x is converted to integer.
@@ -25,7 +25,7 @@ A-False
 8. Python’s set data type allows duplicate elements.
 A-False
 9. The break statement in a loop terminates only the innermost loop it is contained within.
-A-False
+A-Output--False  ❌  
 10. A Python function must always include a return statement.
 A-False
 ---------------------------------------------------------------------------
@@ -34,11 +34,11 @@ Section B : MCQs
 11. What will be the output of the “hello” +1+2+3?
 a) hello123
 b) hello
-c) Error
-d) hello6        a
+c) Error         ❌  
+d) hello6        a     
 
 12. What is “Hello”.replace(“l”, “e”)?
-a) Heeeo
+a) Heeeo               ❌
 b) Heelo
 c) Heleo
 d) None      a
@@ -47,7 +47,7 @@ d) None      a
 """
 print("xyyzxyzxzxyy".count('yy'))
 """
-a) 2
+a) 2            ❌
 b) 0
 c) error     a
 d) none of the mentioned
@@ -56,7 +56,7 @@ d) none of the mentioned
 """
 print(chr(ord('A')))
 """
-a) A
+a) A       ❌
 b) B   a
 c) a   
 d) Error
@@ -76,14 +76,14 @@ c) __str__ = 1
 d) none of the mentioned   a
 
 17. Which of the following is not a keyword in Python?
-a) eval    a
+a) eval    a             
 b) assert
 c) nonlocal
 d) pass
 
 18. Which of the following is an invalid statement?
 a) abc = 1,000,000      a
-b) a b c = 1000 2000 3000            
+b) a b c = 1000 2000 3000    ❌        
 c) a,b,c = 1000, 2000, 3000
 d) a_b_c = 1,000,000
 
@@ -107,7 +107,7 @@ d) None of the mentioned
 a) 7
 b) 1      a
 c) 0
-d) Error
+d) Error  ❌
 
 22. Given a function that does not return any value, what is the default return value when it is executed in the Python shell?
 a) int
@@ -130,12 +130,12 @@ print(max("what are you"))
 a) error           a
 b) u
 c) t
-d) y
+d) y               ❌        
 
 25. What error occurs when you execute the following Python code snippet?
 apple = mango
 a) SyntaxError
-b) NameError
+b) NameError              ❌
 c) ValueError
 d) TypeError     a
 
@@ -162,14 +162,14 @@ d) print(‘hello’ + ‘-‘ + ‘how’ + ‘-‘ + ‘are’ + ‘you’)
 
 28. What is the output of print 0.1 + 0.2 == 0.3?
 a) True           a
-b) False
+b) False               ❌
 c) Machine dependent
 d) Error
 
 29. Which of the following is incorrect in Python?
 a) float(‘inf’)            a
 b) float(‘nan’)
-c) float(’56’+’78’)
+c) float(’56’+’78’)          ❌
 d) float(’12+34′)
 
 30. What is the result of round(0.5) – round(-0.5)?
@@ -186,7 +186,7 @@ x<<2
 a) 8      a
 b) 1
 c) 2
-d) 4
+d) 4             ❌
 
 32. Which of the following expressions results in an error?
 a) float(‘10’)
@@ -199,7 +199,7 @@ d) int(’10.8’) a
 print(bin(29))
 """
 a) 0b10111
-b) 0b11101         
+b) 0b11101        ❌ 
 c) 0b11111
 d) 0b11011        a
 
@@ -220,11 +220,11 @@ x & y
 """
 a) b1101    
 b) 0b1101       a
-c) 12
+c) 12            ❌ 
 d) 1101
 
 36. Which of the following expressions can be used to multiply a given number ‘a’ by 4?
-a) a<<2         a
+a) a<<2         a      
 b) a<<4
 c) a>>2
 d) a>>4
@@ -236,7 +236,7 @@ print(['hello', 'morning'][bool('')])
 """
 a) error       a
 b) no output
-c) hello
+c) hello             ❌
 d) morning
  
 38. What will be the output of the following Python code?
@@ -249,7 +249,7 @@ while True:
     i += 1
 
 """
-a) 1 2
+a) 1 2             ❌
 b) 1 2 3    a
 c) SyntaxError
 d) none of the mentioned
@@ -262,7 +262,7 @@ while True:
     break
 a) True
 b) False          a
-c) ERROR
+c) ERROR           ❌
 d) none of the mentioned
 
 40. What will be the output of the following Python code?
@@ -309,7 +309,7 @@ for x in d:
 """
 a) 0 1 2
 b) 0 1 2  0 1 2 0 1 2          a
-c) None None None
+c) None None None                ❌
 d) None of the mentioned
 
 44. What will be the output of the following Python code?
@@ -318,7 +318,7 @@ for i in range(0):
     print(i)
 """
 a) 0      a
-b) no output
+b) no output          ❌
 c) error
 d) none of the mentioned
 
@@ -328,7 +328,7 @@ a = [0, 1, 2, 3]
 for a[0] in a:
     print(a[0], end=" ")
 """
-a) 0 1 2 3
+a) 0 1 2 3             ❌
 b) 0 0 0 0            a
 c) 3 3 3 3
 d) error
