@@ -1,40 +1,59 @@
-# How can you print numbers from 1 to 20 using a for loop?
+# How do you print a user-entered number 10 times?
 """
-for i in range(1,21):
+n=int(input("Enter a number:  "))
+for i in range(10):
+    print(n)
+"""
+# What for loop prints characters of a string one per line?
+"""
+w=str(input("Enter a word:  "))
+for i in w:
     print(i)
 """
-# What loop can display numbers from 10 to 1 in descending order?
+# How can you count numbers from 1 to n, where n is user input?
 """
-for i in range(10,0,-1):
+n=int(input("Enter a number:  "))
+for i in range(1,n+1):
     print(i)
 """
-# How do you print even numbers between 1 and 30 using a for loop?
+# What loop prints numbers from 1 to 100 that are not divisible by 3?
 """
-for i in range(2,31,2):
-    print(i)
+for i in range(1,100+1):
+    if i%3!=1:
+        print(i)
 """
-# What code prints odd numbers from 5 to 25?
+# How do you print the first 10 Fibonacci numbers using a for loop?
 """
-for i in range(5,26,2):
-    print(i)
+x=0
+y=1
+for i in range(10):
+    n=x+y
+    print(n)
+    x=y
+    y=n
 """
-# How can you print the first 10 multiples of 3?
+# What code prints a pattern of stars in 5 rows (1 star, 2 stars, etc.)?
 """
-n=3
+
+"""
+# How can you print a multiplication table for 7?
+"""
 for i in range(1,11):
-    print(f"{3} multiplied with {i} is {n*i}")
+    print(f"{7} multiplied with {i} is {7*i}")
 """
-# What for loop prints numbers from 1 to 50, skipping multiples of 5?
+# What loop sums numbers from 1 to 50?
+"""
+n=0
 for i in range(1,51):
-    if i%5==0:
-        continue
+    n+=i
+print(f"Total sum = {n}")
+"""
+# How do you print numbers from n to 1, where n is user input?
+"""
+n=int(input("Enter a number:  "))
+for i in range(n,0,-1):
     print(i)
-
-
-# How do you print the squares of numbers from 1 to 10?
-
-# What loop displays numbers from 100 to 50 in steps of 5?
-
-# How can you print numbers divisible by 4 between 1 and 40?
-
-# What code prints the first 15 numbers in steps of 2 starting from 0?
+"""
+# What for loop prints every second number from 10 to 20?
+for i in range(10,21,2):
+    print(i)
