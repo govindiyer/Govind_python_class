@@ -55,5 +55,7 @@ for i in range(n,0,-1):
     print(i)
 """
 # What for loop prints every second number from 10 to 20?
+"""
 for i in range(10,21,2):
     print(i)
+"""

@@ -37,22 +37,47 @@ for i in l:
 print(n)
 """
 # How do you write a function to count how many elements in a list are greater than 10?
+"""
 l=[]
 for i in range(5):
-    x=int(input("Enter a number:  "))
-    l.append(x)
+    n=int(input("Enter a number:  "))
+    l.append(n)
 for j in l:
-    if j%2==0:
-        print("Even")
-    else:
-        print("Odd")
-print(j.count())
+    if j>10:
+        print(j,end=",")
+"""
 # What function reverses a list using a loop and returns it?
-
+"""
+l=[]
+for i in range(5):
+    n=int(input("Enter a number:  "))
+    l.append(n)
+for j in l:
+    x=l[::-1]
+print(x)
+"""
 # How can you use if-else to remove all odd numbers from a list in a function?
-
+"""
+l=[]
+for i in range(5):
+    n=int(input("Enter a number:  "))
+    l.append(n)
+for i in l: 
+    if not (i%2==1):
+        l.pop(i)
+print(l)
+"""
 # What function takes a list and returns a new list with each element doubled?
-
+"""
+l=[]
+for i in range(5):
+    n=int(input("Enter a number:  "))
+    l.append(n)
+n=[]
+for i in l:
+    n.append(i*2)  
+print(n)
+"""
 # How do you write a function to check if a list is empty using if-else?
 
 # What code uses a function to find the index of a user-entered number in a list?

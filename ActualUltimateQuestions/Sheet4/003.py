@@ -1,10 +1,12 @@
 # How do you write a function to return the sum of numbers from 1 to 10?
+"""
 def sumofnum():
     result=0
     for i in range(1,11):
         result+=i
     return result
 print(sumofnum())
+"""
 # What function returns the current time as a string?
 
 # How can a function return the count of even numbers from 1 to 20?

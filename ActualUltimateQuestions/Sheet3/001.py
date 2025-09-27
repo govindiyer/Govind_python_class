@@ -48,5 +48,7 @@ for i in range(1,41):
         print(i)
 """
 # What code prints the first 15 numbers in steps of 2 starting from 0?
-for i in range(0,31,2):
+"""
+for i in range(0,30,2):
     print(i)
+"""
