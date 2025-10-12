@@ -59,7 +59,7 @@ while x>=0:
     print(d[x])
     x-=1
 """
-# What code finds the number of iterations until a number becomes 1?
+# What code finds the number of iterations until a number becomes 1 (divide by 2 if even, multiply by 3 and add 1 if odd)?
 """
 n=int(input("Enter a number:  "))
 i=0
@@ -71,11 +71,11 @@ while n!=1:
     i+=1
 print(i)
 """
-# (divide by 2 if even, multiply by 3 and add 1 if odd)?
-
 # How do you print numbers from 1 to 10 with their factorials?
+"""
 n=int(input("Enter a number:  "))
 x=1
 for i in range(1,n+1):
     x*=i
 print(x)
+"""

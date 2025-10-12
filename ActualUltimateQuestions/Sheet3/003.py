@@ -55,5 +55,7 @@ for i in range(1,22,2):
     print(i)
 """
 # How do you print multiples of 5 up to 50?
+"""
 for i in range(1,11):
     print(f"{5} multiplied with {i} is equal to {5*i}")
+"""
