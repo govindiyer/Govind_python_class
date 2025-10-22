@@ -72,8 +72,10 @@ def digitsum(a):
 print(digitsum([1,2,3,4,5,6,7,8,9]))
 """
 # What function returns the length of a string passed as input?
+"""
 def length(a):
     for i in a:
         result=len(a)
     return result
-print(length("Govind"))
+print(length(str(input("Enter a word:  "))))
+"""

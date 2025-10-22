@@ -79,5 +79,18 @@ for i in l:
 print(n)
 """
 # How do you write a function to check if a list is empty using if-else?
-
+l=[]
+for i in range(5):
+    n=int(input("Enter a number:  "))
+    l.append(n)
+if len(l)==0:
+    print("Empty")
+else:
+    print("Full")
 # What code uses a function to find the index of a user-entered number in a list?
+l=[]
+for i in range(5):
+    n=int(input("Enter a number:  "))
+    l.append(n)
+index=l.index(3)
+print(index)

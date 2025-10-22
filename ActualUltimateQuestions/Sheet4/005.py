@@ -43,11 +43,49 @@ def avg(li):
 print(avg([1,2,3,4,5,6,7,8,9]))
 """ 
 # How do you write a recursive function to calculate the factorial of a number?
-
+"""
+def factorial(n):
+    if n==0:
+        return 1
+    else:
+        return n*factorial(n-1)
+num=5
+result=factorial(num)
+print(f"The factorial of {num} is {result}") 
+"""
 # What recursive function returns the nth Fibonacci number?
-
+"""
+def fibonacci(n):
+    if n<=0:
+        print("Incorrect input")
+    elif n==1:
+        return 0
+    elif n==2:
+        return 1
+    else:
+        return fibonacci(n-1)+fibonacci(n-2)
+print(fibonacci(10))
+"""
 # How can a recursive function print numbers from n to 1?
 
 # What recursive function calculates the sum of numbers from 1 to n?
+def Sum(n):
+    if n <= 1:
+        return n
+    else:  # Recursive case: n + sum of numbers from 1 to n-1
+        return n+Sum(n-1)
 
+
+n=int(input("Enter a number:  "))
+result=um(num)
+print(f"The sum of numbers from 1 to {num} is: {result}")
 # How do you write a recursive function to reverse a string?
+"""
+def reverse(str):
+    if len(str)==0:
+        return str
+    return reverse(str[1:])+str[0]
+if __name__=="__main__":
+    str=input("Enter a word:  ")
+    print(reverse(str))
+"""
