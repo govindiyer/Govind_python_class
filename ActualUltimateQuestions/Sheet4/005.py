@@ -67,18 +67,25 @@ def fibonacci(n):
 print(fibonacci(10))
 """
 # How can a recursive function print numbers from n to 1?
-
+"""
+def reverseorder(n):
+  if n < 1:
+    return
+  print(n)
+  reverseorder(n - 1)
+reverseorder(int(input("Enter a number:  "))) 
+"""
 # What recursive function calculates the sum of numbers from 1 to n?
+"""
 def Sum(n):
     if n <= 1:
         return n
-    else:  # Recursive case: n + sum of numbers from 1 to n-1
+    else:
         return n+Sum(n-1)
-
-
 n=int(input("Enter a number:  "))
-result=um(num)
-print(f"The sum of numbers from 1 to {num} is: {result}")
+result=Sum(n)
+print(f"The sum of numbers from 1 to {n} is: {result}")
+"""
 # How do you write a recursive function to reverse a string?
 """
 def reverse(str):
