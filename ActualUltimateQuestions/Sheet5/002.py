@@ -81,8 +81,10 @@ def count(a):
 print(count((11,2,3,4,5,6,7,8,9,10)))
 """
 # How do you write a function to return the first and last elements of a tuple?
-my_tuple=(10,20,30,40,50)
+"""
+my_tuple=(1,2,3,4,5,6,7,8,9,10)
 x= my_tuple[:1][0]
 y=my_tuple[-1:]
 print("First Element:",x)
 print("Last Element:",y[0])
+"""
