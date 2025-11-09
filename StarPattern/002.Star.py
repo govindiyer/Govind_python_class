@@ -9,24 +9,26 @@
 # 2    8 
 # 3    7 
 # 4    6 
-
-
+x=5
+for i in range(1,x+1):
+    for j in range(x-i):
+        print("*",end="")
 # 2*4
 # 1 row -- 1 * -- 7 Spaces
 # 2      -- 2  - 6 
 # 3         2     -5
 #  
-rows = 5
-for i in range(1,rows+1):
-    for j in range(rows-i):
-        print(" ", end=" ")
+# rows = 5
+# for i in range(1,rows+1):
+#     for j in range(rows-i):
+#         print(" ", end=" ")
 
-    for k in range(2*i-1):
-        if k==0 or i==rows or k== 2*i-2:
-            print("*", end=" ")
-        else:
-            print(" ", end=" ")
-    print()
+#     for k in range(2*i-1):
+#         if k==0 or i==rows or k== 2*i-2:
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")
+#     print()
 
 
 
