@@ -71,6 +71,7 @@ def unite(a,b):
 print(unite({1,2,3,4,5},{6,7,8,9,10}))
 """
 # What code uses a function to remove all elements less than 10 from a set?
+"""
 def delete(a):
     result=[]
     for i in a:
@@ -78,6 +79,7 @@ def delete(a):
             result.append(i)
     return set(result)
 print(delete({0,2,4,6,8,10,12,14,16,18,20}))
+"""
 # How do you write a function to find the intersection of two sets?
 """
 def inter(a,b):
