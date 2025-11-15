@@ -50,14 +50,40 @@ def value(a,b):
 print(value({"Hello":"World","Ok":"Bye"},"Ok"))
 """
 # What function checks if a key exists in a dictionary using if-else?
+"""
 def exist(a,b):
     if b in a:
         return True
     else:
         return False
 print(exist({"ABC":123,"DEF":456,"GHI":789,"JKL":101112},"GHI"))
+"""
 # How can you create a function to add a key-value pair to a dictionary if the key doesn’t exist?
-
+"""
+def add(a,b,c):
+    if b not in a:
+        result=a[b]=c
+        return result
+    else:
+        print(f"{b} already exists. No change made.")
+scores = {"Alice":100,'Bob':85}
+print(f"Original: {scores}\n")
+add(scores,"Charlie",92)
+add(scores, "Alice",50)
+print(scores)
+"""
 # What code uses a function to return the sum of all values in a dictionary?
-
+"""
+def allsum(a):
+    result=sum(a.values())
+    return result
+print(allsum({"Age":12,"Marks1":98,"Marks2":96,"Marks3":100})) 
+"""
 # How do you write a function to count how many values in a dictionary are greater than 50?
+def count(a):
+    result=0
+    for i in a.values():
+        if i>=50:
+            result+=1
+    return result
+print(count({"Age":12,"Marks1":49,"Marks2":99,"Marks3":100}))
