@@ -80,6 +80,7 @@ def allsum(a):
 print(allsum({"Age":12,"Marks1":98,"Marks2":96,"Marks3":100})) 
 """
 # How do you write a function to count how many values in a dictionary are greater than 50?
+"""
 def count(a):
     result=0
     for i in a.values():
@@ -87,3 +88,4 @@ def count(a):
             result+=1
     return result
 print(count({"Age":12,"Marks1":49,"Marks2":99,"Marks3":100}))
+"""

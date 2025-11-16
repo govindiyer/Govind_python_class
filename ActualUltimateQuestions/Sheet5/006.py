@@ -1,9 +1,27 @@
 # How do you write a function that uses the append() method to add a user-entered number to a list if it’s greater than 0?
-
+"""
+def add(a,b):
+    if b>0:
+        a.append(b)
+    print(a)
+add([1,2,3,4,5,6,7,8,9],int(input("Enter a number:  ")))
+"""
 # What function uses the pop() method to remove the last element of a list and returns the updated list if it’s not empty?
-
+"""
+def delete(a):
+    a.pop()
+    if len(a)>0:
+        print(a)
+delete([1,2,3,4,5,6,7,8,9,10,11])
+"""
 # How can you create a function that uses the sort() method to sort a list in ascending order and checks if the list has more than 3 elements?
-
+def ascend(a):
+    a.sort()
+    if len(a)>3:
+        print(a)
+    else:
+        print("List is too small,could add some more elements")
+ascend([10,9,8,7,6,5,4,3,2,1])
 # What code uses the count() method in a function to return how many times a user-entered value appears in a list?
 
 # How do you write a function that uses the extend() method to combine two lists and returns the result if the combined length is greater than 5?
