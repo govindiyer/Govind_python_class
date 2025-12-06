@@ -84,6 +84,7 @@ print(count({"Name":"Govind","Age":12,"Marks":67}))
 
 """
 # How can you use a function to filter a dictionary to include only keys with even values?
+"""
 def even(a):
     result={}
     for i,j in a.items():
@@ -91,3 +92,4 @@ def even(a):
             result[i]=j
     print(result)
 even({"a":1,"b":2,"c":3,"d":4})
+"""

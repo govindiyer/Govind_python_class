@@ -59,8 +59,19 @@ def length(a):
 length((1,2,3,4,5,6,7,8,9,10))
 """
 # How do you write a function that uses the add() method to insert a user-entered number into a set and returns the updated set?
+"""
 def adding(a,b):
     a.add(b)
     print(a)
 adding({1,2,3,4,5,6,7,8,9},10)
+"""
 # What function uses the discard() method to remove a user-entered element from a set if it exists and returns the set?
+"""
+def delete(a,b):
+    if b in a:
+        a.discard(b)
+    else:
+        print("none")
+    print(a)
+delete({1,2,3,4,5,6,7,8,9,10},int(input("Enter a number:  ")))
+"""
