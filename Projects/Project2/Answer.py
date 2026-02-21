@@ -53,7 +53,7 @@ def tip():
     print("The tip amount is",choice1)
     print("Total price is",pricewithtax)
     global actualprice
-    actualprice=pricewithtax+choice
+    actualprice=pricewithtax+choice1
     print("Total price with tip and tax is",actualprice)
     print("Thank you very much.If you have a problem with us, please tell us.We will try our best to fix it")
 tip()
@@ -93,9 +93,7 @@ def fileadding():
         file.write(str(price))
         file.write(str(people))
         file.write(str(orderlist))
-        file.write(str(menulist))
         file.write(str(order))
-        file.write(str(ordernumber))
         file.write(str(choice))
         file.write(str(choice1))
         file.write(str(tax1))
