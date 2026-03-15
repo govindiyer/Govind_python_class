@@ -17,10 +17,10 @@ l.pop()
 l.pop(-4)
 
 # 3-removing an element with a value(Will give error if not present in a list)
-l.remove("a")
-l.remove("G")#Will give error
+l.remove('a')
+# l.remove("G")#Will give error
 # Clearing a list:
-l.clear()
+# l.clear()
 #Deleting a list:
 """
 del l

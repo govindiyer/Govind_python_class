@@ -15,4 +15,5 @@ elif choice ==3:
 elif choice==4:
     print(div.div(firstNum,secondNum))
 else:
+    print("NOT POSSIBLE, ENTER A NUMBER BETWEEN 1 and 4 FOR A VALUE")
     exit()
