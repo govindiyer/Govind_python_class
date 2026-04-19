@@ -63,7 +63,7 @@ d)
 a) {1}
 b) {1,2,3}
 c) {2,3}
-d) Error
+d) Error a
 
 12. Which of the following creates a tuple?
 a) [1,2,3]
@@ -84,7 +84,7 @@ c) my_list[end]
 d) my_list[0]
 
 15. What is the output of `len({'a':1, 'b':2, 'c':3})`?
-a) 3
+a) 3 a
 b) 6
 c) 2
 d) Error
@@ -267,7 +267,7 @@ print(func(1,2,3))
 a) 6
 b) 13
 c) 16
-d) Error
+d) Error a
 
 38. Which function returns the length of an object?
 a) length()
@@ -297,15 +297,15 @@ d) ""
 
 ## 10 True/False Questions
 
-# 41. Python is a compiled language.
+# 41. Python is a compiled language. True
 
 # 42. Lists in Python are immutable. False
 
-# 43. The 'is' operator compares the memory addresses of two objects.
+# 43. The 'is' operator compares the memory addresses of two objects. False
 
 # 44. A function can return multiple values in Python. True
 
-# 45. Python supports multiple inheritance.
+# 45. Python supports multiple inheritance. True
 
 # 46. The 'finally' block always executes regardless of exceptions. True
 
@@ -315,7 +315,7 @@ d) ""
 
 # 49. Python uses indentation to define code blocks. True
 
-# 50. The 'with' statement is used for exception handling.
+# 50. The 'with' statement is used for exception handling. False
 
 ## 5 Coding Questions
 
@@ -410,7 +410,12 @@ factorial(5)
 
 #54)
 def find_max(numbers):
-    for i in len(range(numbers)):
-        if i>i:
-            print("x")
+    print(max(numbers))
 find_max([3, 7, 2, 9, 1])
+
+#51)
+def reverse_string(s):
+    print(s[::-1])
+reverse_string("hello")
+
+
