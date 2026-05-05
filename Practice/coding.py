@@ -63,3 +63,15 @@ def Palindrome():
     else:
         print(word,"is not a palindrome.")
 Palindrome()
+
+
+
+
+
+
+# FIND EVEN NUMBERS WITHIN A RANGE
+
+
+#FIND SUM OF PRIME NUMBER WITHIN A GIVEN RANGE
+
+#
