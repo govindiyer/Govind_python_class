@@ -1,7 +1,8 @@
+import Tax
+import Tip,Bill_amt,Bill_generator
 count_people=0
 names_list=[]
 total_food=0
-tax_amt=0
 tip_amt=0
 total_price=0
 
@@ -63,33 +64,11 @@ def mode_and_total_price():
     print("Total Amount: Rs.", total_food)
 mode_and_total_price()
 
-def tax():
-    global tax_amt,total_food
-    tax_amt=0.10
-    print("The tax amount (in Rs.) is:",total_food*tax_amt)
-tax()
+print("Tax amount: ",Tax.tax())
+print("Tip amount: ",Tip.tip())
+print("Total_Price: ",Bill_amt.bill_amt())
+print("Bill: ",Bill_generator.bill())
 
-def tip():
-    global tip_amt
-    tip_input=input("Please add a tip (Optional, enter 0 or press Enter): ")
-    tip_amt=int(tip_input) if tip_input.strip() else 0
-    if tip_amt>0:
-        print("Thank you for paying us a tip")
-tip()
-
-def total_bill():
-    global total_price,total_food,tax_amt,tip_amt
-    total_price=total_food+(total_food*tax_amt)+tip_amt 
-    print("The total price of the food is:",total_price)
-total_bill()
-
-def bill_generator():
-    print("Bill: order 23957: Restaurant order")
-    print("Total price (without tax or tip):",total_food)
-    print("Tax amount:",total_food*tax_amt)
-    print("Tip amount:",tip_amt)
-    print("Total price (with tax and tip):",total_price)
-bill_generator()
 
 def thank_you_note():
     print("Thank you for paying us a visit, we hope that you come back in the future.")

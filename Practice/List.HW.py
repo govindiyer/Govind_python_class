@@ -1,9 +1,5 @@
-print("Answers")
-#1
-"""
-l=["Vase","Statue","Coin"]
-l.append("Tablet")
-l.insert(0,"Mask")
-l.sort()
-print(l)
-"""
+for i in range(1,int(input())+1):
+    x=10**i
+    for c in range(i):
+        c*=10
+        print(c)

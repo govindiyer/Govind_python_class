@@ -64,17 +64,17 @@ for i in range(n):
     ascii_value +=1
     print()
 
-"""
-Floyd's Triangle
-1
-2 3 
-4 5 6 
-7 8 9 10
+# """
+# Floyd's Triangle
+# 1
+# 2 3 
+# 4 5 6 
+# 7 8 9 10
 
-""" 
-number = 1
-for i in range(n):
-    for j in range(i+1):
-        print(number,end=" ")
-        number+=1
-    print()
+# """ 
+# number = 1
+# for i in range(n):
+#     for j in range(i+1):
+#         print(number,end=" ")
+#         number+=1
+#     print()
