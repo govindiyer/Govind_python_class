@@ -218,7 +218,7 @@ d) A built-in function
 32. What is the output of:
 ```python
 def func(x, y=5):
-return x * y
+    return x * y
 print(func(3))
 ```
 a) 15
@@ -241,10 +241,10 @@ d) A data structure
 35. What is the output of:
 ```python
 def outer():
-x = 1
-def inner():
-return x + 1
-return inner()
+    x = 1
+    def inner():
+        return x + 1
+    return inner()
 print(outer())
 ```
 a) 2
