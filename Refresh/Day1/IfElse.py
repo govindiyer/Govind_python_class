@@ -11,9 +11,9 @@
 #
 # Pricing:
 #
-# 0 to 100 units       -> ₹5 per unit
-# 101 to 200 units     -> ₹7 per unit
-# 201 to 300 units     -> ₹10 per unit
+# 0 to 100 units       -> ₹5 per unit    5*100
+# 101 to 200 units     -> ₹7 per unit    7*100
+# 201 to 300 units     -> ₹10 per unit   10*50
 # Above 300 units      -> ₹15 per unit
 #
 # If the total bill exceeds ₹2000, add a 5% surcharge.
@@ -46,9 +46,24 @@
 # ------------------------------------------------------------
 
 # Write your solution here
-
-
-
+"""
+units=int(input("Enter the number of units:  "))
+bill=0
+if units>=0 and units<=100:
+    bill+=units*5
+elif units<201:
+    bill+=(units-100)*7+units*5
+elif units<301:
+    bill+=(units-200)*10+100*7+100*5
+else:
+    bill+=(units-300)*15+100*10+100*7+100*5
+print("The electricity fee is Rs.",bill)
+if bill>2000:
+    print("Due to the high usage of electricity in your house, we are to add 5 percent to your total.")
+    extra=0.05*bill
+    total_bill=bill+extra
+    print("the electricity fee with the 5 percent extra fee is Rs.",total_bill)
+"""
 # ============================================================
 # QUESTION 2: Student Grade Calculator
 # ============================================================
@@ -116,9 +131,35 @@
 # ------------------------------------------------------------
 
 # Write your solution here
-
-
-
+"""
+name=str(input("Enter your name:  "))
+english=int(input("Enter your english marks:  "))
+csc=int(input("Enter your csc marks:  "))
+sst=int(input("Enter your sst marks:  "))
+math=int(input("Enter your math marks:  "))
+science=int(input("Enter your science marks:  "))
+print("The name of the student is",name)
+print("Your english marks are",english)
+print("Your csc marks are",csc)
+print("Your math marks are",math)
+print("Your sst marks are",sst)
+print("Your science marks are",science)
+avg=(english+csc+math+sst+science)/5
+print("Your average marks are",avg)
+if avg>89:
+    print("A")
+elif avg>79 and avg<90:
+    print("B")
+elif avg>69 and avg<80:
+    print("C")
+elif avg>59 and avg<70:
+    print("D")
+elif avg>49 and avg<60:
+    print("E")
+else:
+    print("F") 
+print("Congratulations, you have moved on to the next grade!!!")
+"""
 # ============================================================
 # QUESTION 3: Login Authentication
 # ============================================================
@@ -175,9 +216,18 @@
 # ------------------------------------------------------------
 
 # Write your solution here
-
-
-
+"""
+username=input("Enter the user:  ")
+password=input("Enter the password:  ")
+if username=="admin" and password!="admin123":
+    print("Incorrect password, please try again")
+elif username!="admin" and password=="admin123":
+    print("Incorrect user, please try again")
+elif username!="admin" and password!="admin123":
+    print("Incorrect user and password, please try again")
+else:
+    print("Login verified")
+"""
 # ============================================================
 # QUESTION 4: Triangle Validator
 # ============================================================
@@ -241,9 +291,23 @@
 # ------------------------------------------------------------
 
 # Write your solution here
-
-
-
+"""
+side1=int(input("Enter a number:  "))
+side2=int(input("Enter a number:  "))
+side3=int(input("Enter a number:  "))
+if side1+side2>side3 or side3+side2>side1 or side1+side3>side2:
+    print("Triangle is valid")
+    if side1==side2==side3:
+        print("Equilateral triangle")
+    elif side1==side2!=side3 or side3==side2!=side1 or side1==side3!=side2:
+        print("Isoceles triangle")
+    else:
+        print("Scalene triangle")
+else:
+    print("Triangle is invalid")
+perimeter=side3+side1+side2
+print("Perimeter of the triangle is",perimeter)
+"""
 # ============================================================
 # QUESTION 5: ATM Withdrawal System
 # ============================================================
@@ -306,9 +370,16 @@
 # ------------------------------------------------------------
 
 # Write your solution here
-
-
-
+"""
+import sys
+account_balance=int(input("Enter your total balance:  "))
+withdrawal=int(input("Enter the value you want to withdraw:  "))
+remaining=account_balance-withdrawal
+if account_balance==0 or withdrawal%100!=0 or withdrawal>account_balance or remaining<500:
+    print("Due to some certain rules, we cannot accept your withdrawal")
+    sys.exit()
+print("Remaining balance,",remaining)
+"""
 # ============================================================
 # QUESTION 6: Movie Ticket Pricing
 # ============================================================
@@ -366,9 +437,39 @@
 # ------------------------------------------------------------
 
 # Write your solution here
-
-
-
+"""
+age=int(input("Enter your age:  "))
+day=int(input("Enter a number from one through seven:  "))
+if day==1:
+    print("Monday")
+elif day==2:
+    print("Tuesday")
+elif day==3:
+    print("Wednesday")
+elif day==4:
+    print("Thursday")
+elif day==5:
+    print("Friday")
+elif day==6:
+    print("Saturday")
+elif day==7:
+    print("Sunday")
+else:
+    print("value invalid")
+if age<=5:
+    price=0
+elif age>5 and age<=12:
+    price=100
+elif age>12 and age<=60:
+    price=200
+else:
+    price=120
+if day==3:
+    print("20% discount")
+    discount=0.2*price
+    price-=discount
+print(price)
+"""
 # ============================================================
 # QUESTION 7: Employee Bonus Calculator
 # ============================================================
@@ -442,9 +543,27 @@
 # ------------------------------------------------------------
 
 # Write your solution here
-
-
-
+"""
+salary=int(input("Enter your salary:  "))
+years=int(input("Enter your years of service:  "))
+rating=float(input("Enter your rating of one through ten:  "))
+if rating>=9 and rating<=10:
+    if years>=10:
+        increase=(0.2)*salary
+    elif years>=5 and years<10:
+        increase=(0.15)*salary
+    else:
+        increase=(0.1)*salary
+elif rating>=7 and rating<=9:
+    if years>=5:
+        increase=(0.1)*salary
+    else:
+        increase=(0.05)*salary   
+else:
+    increase=(0.0)*salary
+salary_increase=salary+increase
+print("Your salary is",salary_increase)
+"""
 # ============================================================
 # QUESTION 8: Number Classification
 # ============================================================
@@ -491,9 +610,31 @@
 # ------------------------------------------------------------
 
 # Write your solution here
-
-
-
+"""
+number=float(input("Enter a number: "))
+if number>0:
+    print("Positive")
+    if number%2==0:
+        print("Even")
+        if number%3==0:
+            print("Divisible by 3")
+        else:
+            print("Not divisible by 3")
+    else:
+        print("Odd")
+elif number<0:
+    print("Negative")
+    if number%2==0:
+        print("Even")
+        if number%3==0:
+            print("Divisible by 3")
+        else:
+            print("Not divisible by 3")
+    else:
+        print("Odd")
+else:
+    print(0)
+"""
 # ============================================================
 # QUESTION 9: Online Shopping Discount
 # ============================================================
@@ -555,5 +696,20 @@
 # ------------------------------------------------------------
 
 # Write your solution here
-
+"""
+amount=float(input("Enter a number:  "))
+member=float(input("Enter a number:  "))
+if amount>=10000:
+    discount=0.2*amount
+elif amount>=5000 and amount<10000:
+    discount=0.1*amount
+elif amount>=2000 and amount<5000:
+    discount=0.05*amount
+else:
+    discount=0.0*amount
+amount_discount=amount-discount
+if member>50:
+    final_amount=amount-(0.05*amount)
+print("Final amount")
+"""
 # ============================================================
