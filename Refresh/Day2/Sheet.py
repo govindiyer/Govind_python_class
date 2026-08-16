@@ -40,8 +40,26 @@
 # Write your solution below:
 #
 # ------------------------------------------------------------
-
-
+"""
+def classi(n):
+    if n>0:
+        print("Positive")
+    elif n<0:
+        print("Negative")
+    else:
+        print("Zero")
+    if n%2==0:
+        print("Even")
+    elif n%2==1:
+        print("Odd")
+    else:
+        print("Zero")
+    if n%3==0 and n%5==0:
+        print("Divisible by 3 and 5")
+    else:
+        print("Not Divisible by 3 or 5 or both")
+classi(60)
+"""
 # ============================================================
 # QUESTION 2: STUDENT RESULT ANALYZER
 # ============================================================
@@ -84,8 +102,6 @@
 # Write your solution below:
 #
 # ------------------------------------------------------------
-
-
 # ============================================================
 # QUESTION 3: MULTIPLICATION TABLE GENERATOR
 # ============================================================
@@ -122,8 +138,13 @@
 # Write your solution below:
 #
 # ------------------------------------------------------------
-
-
+"""
+num=int(input("enter the number whose multiplicative table you want:  "))
+lim=int(input("till which number should you multiply it till:  "))
+for i in range(lim):
+    print(num,"*",i,"=",i*num)
+    i+=1
+"""
 # ============================================================
 # QUESTION 4: PRIME NUMBERS IN A RANGE
 # ============================================================
@@ -273,8 +294,18 @@
 # Write your solution below:
 #
 # ------------------------------------------------------------
-
-
+import random
+num=random.randint(1,100)
+print(num)
+guess=3
+for i in range(guess):
+    guess_num=int(input("Enter a number:  "))
+    if guess_num!=num:
+        if i==guess-1:
+            print("You have failed, The actual number is ",num)
+    else:
+        print("You win!!!")
+        break
 # ============================================================
 # QUESTION 7: SHOPPING CART BILL CALCULATOR
 # ============================================================
